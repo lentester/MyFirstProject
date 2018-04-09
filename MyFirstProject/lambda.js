@@ -32,3 +32,20 @@ exports.handler = function (event, context, callback) {
 
 	callback(null, 'Successfully executed');
 }
+
+/*
+s3.getBucketLocation({
+	'Bucket': "bukky"
+}).promise()
+	.then(data => {
+		console.log(data);           // successful response
+        /*
+        data = {
+            LocationConstraint: "us-west-2"
+        }
+        */
+	})
+	.catch(err => {
+		console.log(err, err.stack); // an error occurred
+	});
+*/
